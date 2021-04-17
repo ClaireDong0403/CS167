@@ -8,4 +8,5 @@ I think it runs on the driver node since the driver node creates new configurati
 (Q4) How many lines do you see in the output?<br />
 Map output records=27972<br />
 (Q5) How many files are produced in the output?<br />
-4 files 
+4 files <br />
+![alt text](https://github.com/ClaireDong0403/CS167/blob/main/lab3/Q5.jpg)
