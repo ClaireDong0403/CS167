@@ -8,9 +8,24 @@ I think it runs on the driver node since the driver node creates new configurati
 (Q4) How many lines do you see in the output?<br />
 Map output records=27972<br />
 (Q5) Local file system: How many files are produced in the output?<br />
-4 files <br />
+1 file: 'part-m-00000' <br />
 ![alt text](https://github.com/ClaireDong0403/CS167/blob/main/lab3/Q5.png)<br />
 (Q6) Explain this number based on the input file size and default block size.<br />
 Bytes Read=2339220 = 2.33 MB which should be smaller than the default block size. So there is only one block created. Therefore we have one output file: part-m-00000.<br />
-(Q7) HDFS: How many files are produced in the output?
-2 files: '_SUCCESS' and 'part-m-00000'
+(Q7) HDFS: How many files are produced in the output?<br />
+1 file: 'part-m-00000'<br />
+(Q8) Explain this number based on the input file size and default block size.<br />
+Bytes Read=2339220 = 2.33 MB which should be smaller than the default block size. So there is only one block created. Therefore we have one output file: part-m-00000.<br />
+(Q9) Run your program on the file nasa_19950801.tsv. How many files are produced in the output directory and how many lines are there in each file?<br />
+2 files: 'part-m-00000': 4 lines and 'part-m-00001': 0 line<br />
+(Q10) Explain these numbers based on the number of reducers and number of response codes in the input file.<br />
+There are 2 output files because there are 2 reducers. There are 4 lines because there are 4 different response codes.<br />
+(Q11) Run your program on the file nasa_19950630.22-19950728.12.tsv. How many files are produced in the output directory and how many lines are there in each file?<br />
+2 files: 'part-m-00000': 5 lines and 'part-m-00001': 2 lines<br />
+(Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
+There are 2 output files because there are 2 reducers. There are total of 7 lines because there are 7 different response codes.<br />
+(Q13) Run your program on the output of the Filter operation with response code 200.  How many files are produced in the output directory and how many lines are there in each file?<br />
+2 files: 'part-m-00000': 1 line and 'part-m-00001': 0 line<br />
+(Q14) Explain these numbers based on the number of reducers and number of response codes in the input file.<br />
+There are 2 output files because there are 2 reducers. There is total of 1 line because there is only 1 response code which is 200.<br />
+
